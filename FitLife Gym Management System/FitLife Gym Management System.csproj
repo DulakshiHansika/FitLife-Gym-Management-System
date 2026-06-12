@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DFC1380D-373A-4267-8298-A11040E3F06B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FitLife_Gym_Management_System</RootNamespace>
+    <AssemblyName>FitLife Gym Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>280A24B6B598BEE75C7B7099F09EF602BE68BE43</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FitLife Gym Management System_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.8\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin _Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin _Login_Form.Designer.cs">
+      <DependentUpon>Admin _Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Dash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Dash.Designer.cs">
+      <DependentUpon>Admin_Dash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Dashboad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Dashboad.Designer.cs">
+      <DependentUpon>Admin_Dashboad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Dashbord.Designer.cs">
+      <DependentUpon>Admin_Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Bookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Bookings.Designer.cs">
+      <DependentUpon>Manage_Bookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Programs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Programs.Designer.cs">
+      <DependentUpon>Manage_Programs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Staff.Designer.cs">
+      <DependentUpon>Manage_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member_Dashboad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_Dashboad.Designer.cs">
+      <DependentUpon>Member_Dashboad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_Dashboard.Designer.cs">
+      <DependentUpon>Member_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_Login.Designer.cs">
+      <DependentUpon>Member_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_Registration.Designer.cs">
+      <DependentUpon>Member_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProgram.Designer.cs">
+      <DependentUpon>ViewProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Programs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Programs.Designer.cs">
+      <DependentUpon>View_Programs.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin _Login_Form.resx">
+      <DependentUpon>Admin _Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Dash.resx">
+      <DependentUpon>Admin_Dash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Dashbord.resx">
+      <DependentUpon>Admin_Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Bookings.resx">
+      <DependentUpon>Manage_Bookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Programs.resx">
+      <DependentUpon>Manage_Programs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Staff.resx">
+      <DependentUpon>Manage_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_Dashboard.resx">
+      <DependentUpon>Member_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_Login.resx">
+      <DependentUpon>Member_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_Registration.resx">
+      <DependentUpon>Member_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ViewProgram.resx">
+      <DependentUpon>ViewProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Programs.resx">
+      <DependentUpon>View_Programs.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FitLife Gym Management System_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_fdup6vfdup6vfdup %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainmenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADMIN LOGIN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b842bc6e16a197194d5110aa1886cc5a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b842bc6e16a197194d5110aa1886cc5a1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uuuu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b842bc6e16a197194d5110aa1886cc5ahhh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fvsdeef.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0884ba540658a5ca938cbce43fb4166c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0884ba540658a5ca938cbce43fb4166c1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\765ef2d512432921655aba400b38573f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03e0eaca68783968a8d6eed199e67612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\383064cb29c1680599334bf1839c5a7e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 FitLife Gym Main Menu .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a7594c2628534d33e3c3c86f5503ca6e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_axh5u4axh5u4axh5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3c1fcb17de8f3e60fb30980a40abc1ca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15960d2910ce4415f0674563dcd8bdf9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vector-search-icon-png-image_318071.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-06-09 102758.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_325736897_lyouuiCkWI59SZAPGPLZ5OWQjw2Gw4qY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_325736897_lyouuiCkWI59SZAPGPLZ5OWQjw2Gw4qY1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_325736897_lyouuiCkWI59SZAPGPLZ5OWQjw2Gw4qY2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_325736897_lyouuiCkWI59SZAPGPLZ5OWQjw2Gw4qY3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\383064cb29c1680599334bf1839c5a7e1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\383064cb29c1680599334bf1839c5a7e2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\862386ca6902ff918f5ff8c252613031.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21b20e5f6832c5856a6a67b64cbaf6bf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\765ef2d512432921655aba400b38573f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\765ef2d512432921655aba400b38573f2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_e47523e47523e475.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_e47523e47523e4751.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6a08648cba8c35147db7595012f6c997.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6a08648cba8c35147db7595012f6c9971.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6a08648cba8c35147db7595012f6c9972.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\765ef2d512432921655aba400b38573f3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\383064cb29c1680599334bf1839c5a7e3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\383064cb29c1680599334bf1839c5a7e4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canvas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\159c38d9bd4ad7da66563978ea30542e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\159c38d9bd4ad7da66563978ea30542e1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
